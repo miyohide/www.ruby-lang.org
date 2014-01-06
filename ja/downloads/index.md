@@ -261,40 +261,28 @@ $ pkg install runtime/ruby-18
 
 Like before, RVM is a good way to obtain the latest version of Ruby.
 
-### Other Implementations of Ruby
+### 様々なRuby処理系
 
-Ruby, as a language, has a few different implementations. This guide has
-been discussing the reference implementation, **MRI** (“Matz's Ruby
-Interpreter”) or **CRuby**, but there are also others.
-They are often useful in certain situations, provide extra
-integration to other languages or environments, or have special features
-that MRI doesn’t.
+Rubyというプログラミング言語にはいくつかの処理系の実装があります。
+このガイドではリファレンス実装である **MRI** (“Matz's Ruby Interpreter”) もしくは **CRuby** と呼んでいる実装について解説してきましたが、このセクションでは他の処理系ついて紹介します。
 
-Here’s a list:
+それらはしばしば、特定の状況で役に立ったり、他の言語や環境との統合を行えたり、MRIにはない特徴をもったりしています。
 
-* [JRuby][21] is Ruby atop the JVM (Java Virtual Machine), utilizing the
-  JVM’s optimizing JIT compilers, garbage collectors, concurrent
-  threads, tool ecosystem, and vast collection of libraries.
-* [Rubinius][22] is ‘Ruby written in Ruby’. Built on top of LLVM,
-  Rubinius sports a nifty virtual machine that other languages are being
-  built on top of, too.
-* [MacRuby][23] is a Ruby that’s tightly integrated with Apple’s Cocoa
-  libraries for Mac OS X, allowing you to write desktop applications
-  with ease.
-* [mruby][mruby] is a lightweight implementation of the Ruby language
-  that can be linked and embedded within an application.
-  Its development is lead by Ruby’s creator Yukihiro “Matz” Matsumoto.
-* [IronRuby][26] is an implementation “tightly integrated with the .NET
-  Framework”.
-* [MagLev][27] is “a fast, stable, Ruby implementation with integrated
-  object persistence and distributed shared cache”.
-* [Cardinal][24] is a “Ruby compiler for [Parrot][25] Virtual Machine”
-  (Perl 6).
+以下にMRI以外の処理系のリストを示します。
+  
+* [JRuby][21] はJVM(Java Virtual Machine)でのRubyの処理系です。
+  JVMの最適化されたJITコンパイラ、ガーベジコレクタ、並列スレッド、ツールのエコシステム、そして豊富なライブラリ群を利用することができます。
+* [Rubinius][22] は ‘Rubyで書かれたRubyの処理系’ です。
+  LLVM上でビルドされ、他の言語のビルドにも使われている素晴らしい仮想マシンを有します。
+* [MacRuby][23] はAppleのMac OS X向けCocoaライブラリと密接に統合しているRubyの処理系です。
+  デスクトップアプリケーションを容易に書いていくことができます。
+* [mruby][mruby] は軽量なRubyの実装で、アプリケーションに埋め込んだりリンクさせたりすることができます。
+  mrubyの開発はRubyの作者である“Matz”ことまつもとゆきひろ氏が中心となって進めています。
+* [IronRuby][26]は.NET Frameworkと密接に統合しているRubyの処理系です。
+* [MagLev][27] は分散共有キャッシュとオブジェクト永続化による高速かつ安定したRubyの実装です。
+* [Cardinal][24]は [Parrot][25] 仮想マシン向けRubyコンパイラです。
 
-Some of those implementations, including MRI, follow the guidelines of
-[RubySpec][28], a “complete executable specification for the Ruby
-programming language”.
-
+MRIを含むいくつかの処理系は、プログラミング言語Rubyのための完全な実行可能な仕様である［RubySpec］[28]のガイドラインに準拠しています。
 
 [5]: https://github.com/vertiginous/pik
 [7]: https://rvm.io/rvm/install/
